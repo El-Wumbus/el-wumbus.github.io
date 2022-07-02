@@ -9,7 +9,6 @@
     </p>
   </div>
 
-  <!-- <div class="d-flex p-2">I'm a flexbox container!</div> -->
 </template>
 
 <style>

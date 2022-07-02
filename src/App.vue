@@ -15,11 +15,6 @@
             >
           </li>
           <li class="nav-item">
-            <RouterLink style="text-decoration: none" to="/about"
-              ><a class="nav-link">About</a></RouterLink
-            >
-          </li>
-          <li class="nav-item">
             <RouterLink style="text-decoration: none" to="/projects"
               ><a class="nav-link">Projects</a></RouterLink
             >
