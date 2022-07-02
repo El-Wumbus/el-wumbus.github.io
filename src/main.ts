@@ -19,7 +19,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faGithub, faDiscord, faSpotify, faEnvelope);
 
-
 const app = createApp(App);
 
 app.component("font-awesome-icon", FontAwesomeIcon);

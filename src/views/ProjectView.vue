@@ -1,5 +1,4 @@
-<script lang="ts" src="../assets/project">
-</script>
+<script lang="ts" src="../assets/TS/project"></script>
 
 <template>
   <div id="grid_contents" style="">
@@ -8,13 +7,19 @@
         <div class="center_container">
           <div class="card__title">{{ projects[0].Project_Name }}</div>
         </div>
-        <div class="center_container">
+        <div class="center_container"></div>
+        <div class="card__description">
+          {{ projects[0].Project_Description }}
         </div>
-        <div class="card__description">{{ projects[0].Project_Description }}</div>
         <div class="card__source_code_button_container">
-          <a class="card__source_code_button" :href="projects[0].Project_Download">Download</a>
-          <a class="card__source_code_button" :href="projects[0].Project_URL">View Source
-            Code</a>
+          <a
+            class="card__source_code_button"
+            :href="projects[0].Project_Download"
+            >Download</a
+          >
+          <a class="card__source_code_button" :href="projects[0].Project_URL"
+            >View Source Code</a
+          >
         </div>
       </div>
 
@@ -22,13 +27,19 @@
         <div class="center_container">
           <div class="card__title">{{ projects[1].Project_Name }}</div>
         </div>
-        <div class="center_container">
+        <div class="center_container"></div>
+        <div class="card__description">
+          {{ projects[1].Project_Description }}
         </div>
-        <div class="card__description">{{ projects[1].Project_Description }}</div>
         <div class="card__source_code_button_container">
-          <a class="card__source_code_button" :href="projects[1].Project_Download">Download</a>
-          <a class="card__source_code_button" :href="projects[1].Project_URL">View Source
-            Code</a>
+          <a
+            class="card__source_code_button"
+            :href="projects[1].Project_Download"
+            >Download</a
+          >
+          <a class="card__source_code_button" :href="projects[1].Project_URL"
+            >View Source Code</a
+          >
         </div>
       </div>
 
@@ -36,13 +47,19 @@
         <div class="center_container">
           <div class="card__title">{{ projects[2].Project_Name }}</div>
         </div>
-        <div class="center_container">
+        <div class="center_container"></div>
+        <div class="card__description">
+          {{ projects[2].Project_Description }}
         </div>
-        <div class="card__description">{{ projects[2].Project_Description }}</div>
         <div class="card__source_code_button_container">
-          <a class="card__source_code_button" :href="projects[2].Project_Download">Download</a>
-          <a class="card__source_code_button" :href="projects[2].Project_URL">View Source
-            Code</a>
+          <a
+            class="card__source_code_button"
+            :href="projects[2].Project_Download"
+            >Download</a
+          >
+          <a class="card__source_code_button" :href="projects[2].Project_URL"
+            >View Source Code</a
+          >
         </div>
       </div>
 
@@ -50,27 +67,39 @@
         <div class="center_container">
           <div class="card__title">{{ projects[3].Project_Name }}</div>
         </div>
-        <div class="center_container">
+        <div class="center_container"></div>
+        <div class="card__description">
+          {{ projects[3].Project_Description }}
         </div>
-        <div class="card__description">{{ projects[3].Project_Description }}</div>
         <div class="card__source_code_button_container">
-          <a class="card__source_code_button" :href="projects[3].Project_Download">Download</a>
-          <a class="card__source_code_button" :href="projects[3].Project_URL">View Source
-            Code</a>
+          <a
+            class="card__source_code_button"
+            :href="projects[3].Project_Download"
+            >Download</a
+          >
+          <a class="card__source_code_button" :href="projects[3].Project_URL"
+            >View Source Code</a
+          >
         </div>
       </div>
 
-       <div class="card">
+      <div class="card">
         <div class="center_container">
           <div class="card__title">{{ projects[4].Project_Name }}</div>
         </div>
-        <div class="center_container">
+        <div class="center_container"></div>
+        <div class="card__description">
+          {{ projects[4].Project_Description }}
         </div>
-        <div class="card__description">{{ projects[4].Project_Description }}</div>
         <div class="card__source_code_button_container">
-          <a class="card__source_code_button" :href="projects[4].Project_Download">Download</a>
-          <a class="card__source_code_button" :href="projects[4].Project_URL">View Source
-            Code</a>
+          <a
+            class="card__source_code_button"
+            :href="projects[4].Project_Download"
+            >Download</a
+          >
+          <a class="card__source_code_button" :href="projects[4].Project_URL"
+            >View Source Code</a
+          >
         </div>
       </div>
     </div>
@@ -84,7 +113,7 @@ h1 {
 
 #grid_contents {
   padding: 3.2rem;
-  padding-top:2rem;
+  padding-top: 2rem;
   background-color: var(--nord0);
 }
 
@@ -98,10 +127,10 @@ h1 {
 .card {
   border: 0px;
   border-radius: 0.7rem;
-  display:grid;
+  display: grid;
   padding: 1rem;
   background-color: var(--nord4);
-  grid-template-rows:1.5rem 2fr 8rem;
+  grid-template-rows: 1.5rem 2fr 8rem;
   grid-auto-columns: auto;
   grid-gap: 0.5rem;
 }
@@ -144,7 +173,6 @@ h1 {
   grid-template-columns: repeat(2, minmax(100px, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1rem;
-  
 }
 
 .card__source_code_button {

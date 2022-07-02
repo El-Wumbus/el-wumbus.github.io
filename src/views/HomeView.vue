@@ -8,7 +8,6 @@
       I occasionally create software ⚙️.
     </p>
   </div>
-
 </template>
 
 <style>

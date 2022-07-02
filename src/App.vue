@@ -1,85 +1,53 @@
 <template>
-  <header>
-    <nav
-      class="navbar sticky-top navbar-expand-lg navbar-dark"
-      style="padding-left: 1rem; background-color: #23272a"
-    >
-      <RouterLink style="text-decoration: none" to="/"
-        ><a class="navbar-brand">Decator</a></RouterLink
-      >
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <RouterLink style="text-decoration: none" to="/"
-              ><a class="nav-link">Home</a></RouterLink
-            >
-          </li>
-          <li class="nav-item">
-            <RouterLink style="text-decoration: none" to="/projects"
-              ><a class="nav-link">Projects</a></RouterLink
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <div>
+    <header>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="padding-left: 1rem; background-color: #23272a">
+        <RouterLink style="text-decoration: none" to="/"><a class="navbar-brand">Decator</a></RouterLink>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <RouterLink style="text-decoration: none" to="/"><a class="nav-link">Home</a></RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink style="text-decoration: none" to="/projects"><a class="nav-link">Projects</a></RouterLink>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <RouterView />
+    <RouterView />
 
-  <div class="social_links">
-    <ul class="social_link__list">
-      <li>
-        <a
-          class="social_link__hyperlink"
-          href="https://github.com/El-Wumbus"
-          target="_blank"
-        >
-          <font-awesome-icon
-            class="social_link__icon"
-            icon="fa-brands fa-github"
-          />
-        </a>
-      </li>
-      <li>
-        <a class="social_link__hyperlink" href="" target="_blank">
-          <font-awesome-icon
-            class="social_link__icon"
-            icon="fa-brands fa-spotify"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          class="social_link__hyperlink"
-          href="mailto:decator.c@proton.me"
-          target="_blank"
-        >
-          <font-awesome-icon
-            class="social_link__icon"
-            icon="fa-solid fa-envelope"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          class="social_link__hyperlink"
-          href="discord.gg/8wBUFeGGYc"
-          target="_blank"
-        >
-          <font-awesome-icon
-            class="social_link__icon"
-            icon="fa-brands fa-discord"
-          />
-        </a>
-      </li>
-    </ul>
+    <div class="social_links">
+      <ul class="social_link__list">
+        <li>
+          <a class="social_link__hyperlink" href="https://github.com/El-Wumbus" target="_blank">
+            <font-awesome-icon class="social_link__icon" icon="fa-brands fa-github" />
+          </a>
+        </li>
+        <li>
+          <a class="social_link__hyperlink" href="" target="_blank">
+            <font-awesome-icon class="social_link__icon" icon="fa-brands fa-spotify" />
+          </a>
+        </li>
+        <li>
+          <a class="social_link__hyperlink" href="mailto:decator.c@proton.me" target="_blank">
+            <font-awesome-icon class="social_link__icon" icon="fa-solid fa-envelope" />
+          </a>
+        </li>
+        <li>
+          <a class="social_link__hyperlink" href="discord.gg/8wBUFeGGYc" target="_blank">
+            <font-awesome-icon class="social_link__icon" icon="fa-brands fa-discord" />
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-  
 </template>
 
 <style>
-@import "assets/nord.css";
-@import "assets/fonts.css";
+@import "assets/CSS/nord.css";
+@import "assets/CSS/fonts.css";
 
 :root {
   background-color: var(--nord0);
@@ -124,5 +92,4 @@ ul.social_links__list li {
   font-weight: 500;
   width: 32px;
 }
-
 </style>
