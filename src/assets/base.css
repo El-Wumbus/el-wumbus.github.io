@@ -1,0 +1,67 @@
+@import "./nord.css";
+@import "./fonts.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--nord0);
+  color: var(--nord8);
+}
+
+.social_links {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  width: auto;
+}
+
+.social_link__list {
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul.social_links__list li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.social_link__image {
+  width: 32px;
+}
+
+.social_link__hyperlink {
+  text-decoration: none;
+  color: var(--nord5);
+}
+
+.social_link__hyperlink:hover {
+  color: var(--nord7);
+}
+
+.social_link__icon {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 32px;
+}
+
+code {
+  font-family: 'Fira Code';
+}
+
+pre code {
+  font-family: 'Fira Mono';
+}
+
+pre {
+  font-family: 'Fira Mono';
+}
