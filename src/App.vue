@@ -5,7 +5,7 @@
       style="padding-left: 1rem; background-color: #23272a"
     >
       <RouterLink style="text-decoration: none" to="/"
-        ><a class="navbar-brand">Aidan Neal</a></RouterLink
+        ><a class="navbar-brand">Decator</a></RouterLink
       >
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
